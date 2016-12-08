@@ -1,0 +1,17 @@
+[requires]
+#OpenSSL/1.0.2i@lasote/stable
+zlib/1.2.8@lasote/stable
+#Poco/1.7.5@lasote/stable
+
+[generators]
+cmake
+
+[options]
+#OpenSSL:shared=False
+zlib:shared=False
+#Poco:shared=False
+
+
+[imports]
+bin, *.dll -> ./build/bin
+lib, *.dylib* -> ./build/bin
