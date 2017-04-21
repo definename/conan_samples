@@ -1,5 +1,3 @@
-cmake_minimum_required(VERSION 3.2.1)
-
 project(poco_test)
 
 include(PCHSupport)
@@ -7,13 +5,9 @@ include(CRTLinkage)
 
 set(PROJECT_SOURCES
 	src/main.cpp
-	src/poco_test.cpp
 	)
-
 set(PROJECT_HEADES
-	include/poco_test.h
 	)
-
 set(MISC
 	src/pch.h
 	src/pch.cpp
