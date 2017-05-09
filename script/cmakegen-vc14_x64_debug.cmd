@@ -24,6 +24,7 @@ echo [*] CMake is running...
 cmake ^
 	-G"Visual Studio 14 2015 Win64" ^
 	-T "v140_xp" ^
+	"-DCMAKE_CONFIGURATION_TYPES:STRING=Debug" ^
 	"-DBUILD_WITH_STATIC_CRT:BOOL=ON" ^
 	../..
 if errorlevel 1 goto :error

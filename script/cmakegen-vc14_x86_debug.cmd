@@ -5,7 +5,7 @@ set BUILD_DIR=..\build\vc14-x86d
 if not exist %BUILD_DIR% mkdir %BUILD_DIR%
 pushd %BUILD_DIR%
 
-:: Run Conan
+:: Run Conan.
 echo [*] Conan is running...
 conan ^
 	install ^
@@ -24,6 +24,7 @@ echo [*] CMake is running...
 cmake ^
 	-G"Visual Studio 14 2015" ^
 	-T "v140_xp" ^
+	"-DCMAKE_CONFIGURATION_TYPES:STRING=Debug" ^
 	"-DBUILD_WITH_STATIC_CRT:BOOL=ON" ^
 	../..
 if errorlevel 1 goto :error
