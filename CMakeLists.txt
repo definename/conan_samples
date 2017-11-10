@@ -11,5 +11,9 @@ option(BUILD_SHARED_LIBS "Build shared libraries (.dll) instead of static ones (
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()
 
+find_package(Boost REQUIRED)
+find_package(OpenSSL REQUIRED)
+find_package(ZLIB REQUIRED)
+
 add_subdirectory(modules/poco_test)
 

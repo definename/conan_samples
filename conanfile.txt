@@ -1,4 +1,5 @@
 [requires]
+Boost/1.64.0@inexorgame/stable
 zlib/1.2.8@lasote/stable
 OpenSSL/1.0.2i@lasote/stable
 Poco/1.7.5@lasote/stable
